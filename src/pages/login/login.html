@@ -1,0 +1,45 @@
+<ion-content>
+  <img style="margin: auto;display: block;" width="60%" height="30%" src="assets/imgs/ubicacion.png" class="logo"/>
+  <ion-grid>
+    <ion-row>
+      <ion-col text-center>
+        <h1 class="titulo">My Ride</h1>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12 center text-center>
+        <input [(ngModel)]="user.email" class="inputlogin" type="email" placeholder="Correo Electronico" required>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-12 center text-center>
+        <input [(ngModel)]="user.password" class="inputlogin" type="password" placeholder="Contraseña" required>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col center text-center>
+        <button (click)="login(user)" class="boton" style="width: 80%;" type="button">Ingresar</button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row style="margin: auto;display: inline-block;">
+
+        <button (click)="olvido()" class="boton2" type="button">Olvidé mi constraseña</button>
+
+        <button (click)="registra()" class="boton2" type="button">Registrarme</button>
+
+    </ion-row>
+
+  <ion-row class="redes">
+    <a href="https://www.facebook.com/" target="_blank"><ion-icon class="facebook" name="logo-facebook"></ion-icon></a>
+    <a href="https://twitter.com/" target="_blank"><ion-icon class="twitter" name="logo-twitter"></ion-icon></a>
+    <a href="https://co.pinterest.com/" target="_blank"><ion-icon class="pinterest" name="logo-pinterest"></ion-icon></a>
+  </ion-row>
+  </ion-grid>
+
+    <h6 center text-center>MyRide Version 1.1 2017</h6>
+
+</ion-content>

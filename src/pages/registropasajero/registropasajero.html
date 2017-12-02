@@ -1,0 +1,59 @@
+<ion-content>
+  <img style="margin: auto;display: block;" align="right" width="30%" height="15%" src="assets/imgs/ubicacion.png" class="logo"/>
+
+  <ion-grid>
+    <ion-row>
+      <!--<ion-col text-center>
+  			<label>
+          <input [(ngModel)]="register.pic" style="display: none;" id="fichero" type="file" accept="image/x-png,image/jpeg">
+          <img src="assets/imgs/ubicacion.png" style="width: 96px; height: 96px; border: 1px solid #ccc; border-radius: 50%;" >
+        </label>
+      </ion-col>-->
+    </ion-row>
+    <ion-row>
+      <ion-col col-12 center text-center>
+        <input [(ngModel)]="register.nom1" class="input" type="text" placeholder="*Nombres" required>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col col-12 center text-center>
+        <input [(ngModel)]="register.ape1" class="input" type="text" placeholder="*Apellidos" required>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col col-12 center text-center>
+        <input [(ngModel)]="register.name" minlength="6"  maxlength="10" class="input" type="text" placeholder="*Nombre De Usuario" required>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col col-12 center text-center>
+        <input [(ngModel)]="register.email" class="input" type="email" placeholder="*Correo Electronico" required>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col col-12 center text-center>
+        <input [(ngModel)]="register.password" minlength="6"  maxlength="8" class="input" type="password" placeholder="*Contraseña (6-8 Digitos)" required>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col col-12 center text-center>
+        <input [(ngModel)]="register.numero" minlength="10"  maxlength="10" class="input" type="number" placeholder="*Numero De Contacto">
+      </ion-col>
+    </ion-row>
+
+  <p center text-center>Las casillas marcadas con * son obligatorias</p>
+
+    <ion-row>
+      <ion-col col-12 center text-center>
+        <button (click)="registrar(register)" class="boton" type="button">Registrarme</button>
+        <button (click)="login()" class="boton" type="button">Login</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

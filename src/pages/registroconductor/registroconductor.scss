@@ -1,0 +1,29 @@
+page-registroconductor {
+  .input{
+      border-radius: 8px;
+      padding: 5px;
+      width: 100%;
+      border: 1px solid #3aabcf;
+      color: #5c5c5c;
+  }
+
+  .boton{
+      font-size: 12pt;
+      background: #3aabcf;
+      padding: 12px;
+      border-radius: 3px;
+      box-shadow: 0px 3px 6px -3px rgba(0,0,0,0.83);
+      color: #fff;
+      font-weight: bold;
+  }
+
+  .boton:active{
+    padding: 18px;
+  }
+
+  .adjuntar{
+    display: block;
+    text-decoration: none;
+    color: #3aabcf;
+  }
+}

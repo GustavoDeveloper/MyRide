@@ -1,0 +1,42 @@
+page-tipo{
+
+  .boton{
+      font-size: 12pt;
+      background: #3aabcf;
+      padding: 12px;
+      border-radius: 3px;
+      box-shadow: 0px 3px 6px -3px rgba(0,0,0,0.83);
+      color: #fff;
+      font-weight: bold;
+      width: 80%;
+  }
+
+  .botonvolver{
+      font-size: 12pt;
+      background: #fff;
+      padding: 12px;
+      border: 1px solid #3aabcf;
+      border-radius: 3px;
+      box-shadow: 0px 3px 6px -3px rgba(0,0,0,0.83);
+      color: #3aabcf;
+      font-weight: bold;
+      width: 80%;
+  }
+
+
+  .titulo{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 34pt;
+    color: #fff;
+    -webkit-text-stroke-color: #3aabcf;
+    -webkit-text-stroke-width: 0.75px;
+  }
+
+  .titulo2{
+    font-weight: bold;
+    font-size: 12pt;
+    color: #3aabcf;
+  }
+
+}

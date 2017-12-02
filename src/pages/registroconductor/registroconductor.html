@@ -1,0 +1,78 @@
+<ion-content>
+  <img style="margin: auto;display: block;" align="right" width="30%" height="15%" src="assets/imgs/ubicacion.png" class="logo"/>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col text-center>
+  			<label>
+          <input [(ngModel)]="register.pic" style="display: none;" id="fichero" type="file" accept="image/x-png,image/jpeg">
+          <img src="assets/imgs/ubicacion.png" style="width: 96px; height: 96px; border: 1px solid #ccc; border-radius: 50%;" >
+        </label>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-6 center text-center>
+        <input [(ngModel)]="register.nom1" class="input" type="text" placeholder="*Primer Nombre" required>
+      </ion-col>
+      <ion-col col-6 center text-center>
+        <input [(ngModel)]="register.nom2" class="input" type="text" placeholder="*Segundo Mombre" required>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col col-6 center text-center>
+        <input [(ngModel)]="register.ape1" class="input" type="text" placeholder="*Primer Apellido" required>
+      </ion-col>
+      <ion-col col-6 center text-center>
+        <input [(ngModel)]="register.ape2" class="input" type="text" placeholder="*Segundo Apellido" required>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col col-12 center text-center>
+        <input [(ngModel)]="register.name" class="input" type="text" placeholder="*Nombre De Usuario" required>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col col-12 center text-center>
+        <input [(ngModel)]="register.email" class="input" type="email" placeholder="*Correo Electronico" required>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col col-12 center text-center>
+        <input [(ngModel)]="register.password" minlength="6"  maxlength="8" class="input" type="password" placeholder="*Contraseña (6-8 Digitos)" required>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col col-12 center text-center>
+        <input [(ngModel)]="register.numero" class="input" type="number" placeholder="*Numero De Contacto">
+      </ion-col>
+    </ion-row>
+
+    <label>
+      <input [(ngModel)]="register.a1" style="display: none;" id="fichero" type="file" accept="image/x-png,image/jpeg">
+      <p class="adjuntar" href="">Adjuntar PDF Licencia De Conduccion</p>
+    </label>
+    <label>
+      <input [(ngModel)]="register.a2" style="display: none;" id="fichero" type="file" accept="image/x-png,image/jpeg">
+      <p class="adjuntar" href="">Adjuntar PFD SOAT</p>
+    </label>
+    <label>
+      <input [(ngModel)]="register.a3" style="display: none;" id="fichero" type="file" accept="image/x-png,image/jpeg">
+      <p class="adjuntar" href="">Adjuntar PDF Revion Tecnico Mecanica</p>
+    </label>
+
+    <p center text-center>Las casillas marcadas con * son obligatorias</p>
+
+    <ion-row>
+      <ion-col col-12 center text-center>
+        <button (click)="registrar(register)" class="boton" type="button">Registrarme</button>
+        <button (click)="login()" class="boton" type="button">Login</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
